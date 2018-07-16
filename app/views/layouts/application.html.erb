@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PickItUp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <div>
+
+    <nav>
+      <ul class="flex-container">
+        <li>
+          <%= link_to 'Home', root_path %>
+        </li>
+        <li>
+          <%= link_to 'Contact', contact_path %>
+        </li>
+        <li>
+          <%= link_to 'FAQ', faq_path %>
+        </li>
+        <% if @current_user.present? %>
+        <li>
+          <%= link_to 'Email addresses', users_path if @current_user.admin? %>
+        </li>
+        <li>
+          <%= link_to "Sign out #{ @current_user.email }", login_path, :method => 'delete' %>
+        </li>
+      <% else %>
+        <li>
+          <%= link_to 'Sign up', new_user_path %>
+        </li>
+        <li>
+          <%= link_to 'Log in', login_path %>
+        </li>
+        <% end %>
+        <div class="brand">
+          Pick it Up mate!
+        </div>
+        <div class="logo">
+          <%= image_tag("Logo_pick_it_up.png", :alt => "App logo") %>
+        </div>
+      </ul>
+    </nav>
+    <%= yield %>
+
+  </div>
+</html>
