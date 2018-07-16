@@ -5,4 +5,9 @@ u2 = User.create :email => 'trump@gmail.com', :password => 'chicken'
 
 
 Item.destroy_all
-i1 = Item.create :title => 'Blue chair', location:'Darlinghurst', :latitud: '-33.877945', longitude: '151.219051'
+i1 = Item.create :title => 'Blue chair', location:'Darlinghurst', :latitude: '-33.877945', longitude: '151.219051', :image => "chair1.jpg"
+i2 = Item.create :title => 'Arm chair', location:'Glebe', :latitude: '-33.878265', longitude: '151.184323', :image => "chair2.jpg"
+
+
+u1.items << i1
+u2.items << i2
