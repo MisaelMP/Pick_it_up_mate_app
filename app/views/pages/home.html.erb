@@ -3,4 +3,11 @@
 
 <% if @current_user.present? %>
   <h1>Welcome back <%= @current_user.name %></h1>
+  <% if @current_user.image? %>
+  <%= image_tag @current_user.image %>
+  <% else %>
+  <%= image_tag ('https://www.goaltos.com/wp-content/uploads/sites/4559/2018/01/avatar-1577909_960_720.png') %>
+  <% end %>
+  <%= button_to "Edit Profile", edit_user_path %>
+  <%= button_to "Post item", post_item_path%>
 <% end %>
