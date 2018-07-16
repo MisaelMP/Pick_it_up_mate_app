@@ -2169,3 +2169,1983 @@ ActionController::UrlGenerationError - No route matches {:action=>"edit", :contr
   app/views/pages/home.html.erb:11:in `_app_views_pages_home_html_erb__677717464822914704_70166496409120'
 
 Started POST "/__better_errors/bce5c2b5f150e5e2/variables" for 127.0.0.1 at 2018-07-16 14:19:01 +1000
+Started GET "/" for 127.0.0.1 at 2018-07-16 14:50:18 +1000
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/misaelm/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (8.8ms)
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 8.2ms)
+
+
+
+ActionController::UrlGenerationError - No route matches {:action=>"edit", :controller=>"users"}, missing required keys: [:id]:
+  app/views/pages/home.html.erb:11:in `_app_views_pages_home_html_erb___1417483798557733902_70140228489460'
+
+Started POST "/__better_errors/04fc4f96e0ad45eb/variables" for 127.0.0.1 at 2018-07-16 14:50:18 +1000
+Started GET "/" for 127.0.0.1 at 2018-07-16 14:53:54 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 2.0ms)
+
+
+
+ActionController::UrlGenerationError - No route matches {:action=>"edit", :controller=>"users"}, missing required keys: [:id]:
+  app/views/pages/home.html.erb:11:in `_app_views_pages_home_html_erb___1417483798557733902_70140239760960'
+
+Started POST "/__better_errors/728ed3f5fa5706de/variables" for 127.0.0.1 at 2018-07-16 14:53:55 +1000
+Started GET "/" for 127.0.0.1 at 2018-07-16 14:54:06 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (392.8ms)
+Completed 500 Internal Server Error in 402ms (ActiveRecord: 0.8ms)
+
+
+
+NameError - undefined local variable or method `post_item_path' for #<#<Class:0x00007f9596ce68e0>:0x00007f9596df8878>:
+  app/views/pages/home.html.erb:12:in `_app_views_pages_home_html_erb___1417483798557733902_70140229047640'
+
+Started POST "/__better_errors/26934384ef3537a1/variables" for 127.0.0.1 at 2018-07-16 14:54:07 +1000
+Started GET "/" for 127.0.0.1 at 2018-07-16 14:54:15 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 6070ms (Views: 6066.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-16 14:54:56 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 69ms (Views: 62.4ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/users/7/edit" for 127.0.0.1 at 2018-07-16 14:55:58 +1000
+  
+ActionController::RoutingError (No route matches [POST] "/users/7/edit"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/users/7/edit" for 127.0.0.1 at 2018-07-16 14:56:37 +1000
+  
+ActionController::RoutingError (No route matches [POST] "/users/7/edit"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-07-16 14:57:38 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 10.7ms)
+
+
+
+SyntaxError - syntax error, unexpected tIDENTIFIER, expecting ')'
+... new_item_path, :method => 'get');@output_buffer.safe_append...
+...                            ^~~
+/Volumes/MisaelMstorage/Projects/pick_it_up/app/views/pages/home.html.erb:17: unterminated string meets end of file
+          end
+             ^
+/Volumes/MisaelMstorage/Projects/pick_it_up/app/views/pages/home.html.erb:17: syntax error, unexpected end-of-input, expecting ')'
+          end
+             ^:
+  app/views/pages/home.html.erb:12:in `'
+
+Started POST "/__better_errors/9c4003b4f0d39778/variables" for 127.0.0.1 at 2018-07-16 14:57:39 +1000
+Started GET "/" for 127.0.0.1 at 2018-07-16 14:58:07 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 389ms (Views: 385.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/7/edit" for 127.0.0.1 at 2018-07-16 14:58:10 +1000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (19.2ms)
+  Rendered users/edit.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 114ms (Views: 106.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 14:58:18 +1000
+
+AbstractController::ActionNotFound - The action 'new' could not be found for ItemsController:
+
+Started POST "/__better_errors/524836aefdd53550/variables" for 127.0.0.1 at 2018-07-16 14:58:18 +1000
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 15:00:01 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 112ms (Views: 78.0ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-16 15:00:44 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 70ms (Views: 62.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 15:00:53 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 65ms (Views: 60.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/7/edit" for 127.0.0.1 at 2018-07-16 15:00:57 +1000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.1ms)
+  Rendered users/edit.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 69ms (Views: 60.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/7/edit" for 127.0.0.1 at 2018-07-16 15:08:09 +1000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (1.6ms)
+  Rendered users/edit.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 124ms (Views: 119.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/7/edit" for 127.0.0.1 at 2018-07-16 15:08:21 +1000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (1.9ms)
+  Rendered users/edit.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 79ms (Views: 74.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 15:08:25 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/new.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.6ms)
+
+
+
+SyntaxError - syntax error, unexpected ':', expecting keyword_end
+...View::OutputBuffer.new; render: partial => 'form' 
+...                              ^:
+  app/views/items/new.html.erb:1:in `'
+
+Started POST "/__better_errors/eb08b9f4f5c9bb47/variables" for 127.0.0.1 at 2018-07-16 15:08:25 +1000
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 15:09:25 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/new.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.6ms)
+
+
+
+SyntaxError - syntax error, unexpected tIDENTIFIER, expecting keyword_end
+'.freeze; :render partial => 'form' 
+                  ^~~~~~~:
+  app/views/items/new.html.erb:4:in `'
+
+Started POST "/__better_errors/6e738f8fa8910e3b/variables" for 127.0.0.1 at 2018-07-16 15:09:25 +1000
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 15:09:52 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (6.4ms)
+  Rendered items/new.html.erb within layouts/application (313.7ms)
+Completed 500 Internal Server Error in 323ms (ActiveRecord: 0.6ms)
+
+
+
+ArgumentError - First argument in form cannot contain nil or be empty:
+  app/views/items/_form.html.erb:1:in `_app_views_items__form_html_erb___4548519784337921723_70140225290980'
+  app/views/items/new.html.erb:4:in `_app_views_items_new_html_erb__4257644942072784773_70140225090360'
+
+Started POST "/__better_errors/427994feb36e4a70/variables" for 127.0.0.1 at 2018-07-16 15:09:52 +1000
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 15:11:08 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (3.5ms)
+  Rendered items/new.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 1.1ms)
+
+
+
+ArgumentError - First argument in form cannot contain nil or be empty:
+  app/views/items/_form.html.erb:1:in `_app_views_items__form_html_erb___4548519784337921723_70140278416100'
+  app/views/items/new.html.erb:4:in `_app_views_items_new_html_erb__4257644942072784773_70140278352080'
+
+Started POST "/__better_errors/98c744faaf8894ad/variables" for 127.0.0.1 at 2018-07-16 15:11:09 +1000
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 15:11:27 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (2.8ms)
+  Rendered items/new.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.5ms)
+
+
+
+ArgumentError - First argument in form cannot contain nil or be empty:
+  app/views/items/_form.html.erb:1:in `_app_views_items__form_html_erb___4548519784337921723_70140278702140'
+  app/views/items/new.html.erb:4:in `_app_views_items_new_html_erb__4257644942072784773_70140278677320'
+
+Started POST "/__better_errors/8fde717c39c10003/variables" for 127.0.0.1 at 2018-07-16 15:11:27 +1000
+Started GET "/users/7/edit" for 127.0.0.1 at 2018-07-16 15:12:20 +1000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (1.6ms)
+  Rendered users/edit.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 82ms (Views: 74.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 15:12:27 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (5.5ms)
+  Rendered items/new.html.erb within layouts/application (8.8ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.5ms)
+
+
+
+ArgumentError - First argument in form cannot contain nil or be empty:
+  app/views/items/_form.html.erb:1:in `_app_views_items__form_html_erb___4548519784337921723_70140254081260'
+  app/views/items/new.html.erb:4:in `_app_views_items_new_html_erb__4257644942072784773_70140254113640'
+
+Started POST "/__better_errors/fbc7604a87c58d45/variables" for 127.0.0.1 at 2018-07-16 15:12:27 +1000
+Started POST "/__better_errors/fbc7604a87c58d45/eval" for 127.0.0.1 at 2018-07-16 15:13:44 +1000
+Started POST "/__better_errors/fbc7604a87c58d45/variables" for 127.0.0.1 at 2018-07-16 15:14:41 +1000
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 15:15:40 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (250.3ms)
+  Rendered items/new.html.erb within layouts/application (254.3ms)
+Completed 500 Internal Server Error in 338ms (ActiveRecord: 31.2ms)
+
+
+
+NoMethodError - undefined method `item_path' for #<#<Class:0x00007f959766ebb0>:0x00007f959766d148>
+Did you mean?  items_path:
+  app/views/items/_form.html.erb:14:in `block in _app_views_items__form_html_erb___4548519784337921723_70140233446840'
+  app/views/items/_form.html.erb:1:in `_app_views_items__form_html_erb___4548519784337921723_70140233446840'
+  app/views/items/new.html.erb:4:in `_app_views_items_new_html_erb__4257644942072784773_70140233480660'
+
+Started POST "/__better_errors/ca459ce30a992eb6/variables" for 127.0.0.1 at 2018-07-16 15:15:41 +1000
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 15:16:31 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (253.2ms)
+  Rendered items/new.html.erb within layouts/application (255.7ms)
+Completed 500 Internal Server Error in 268ms (ActiveRecord: 0.8ms)
+
+
+
+NoMethodError - undefined method `item_path' for #<#<Class:0x00007f959766ebb0>:0x00007f959b71cef0>
+Did you mean?  items_path:
+  app/views/items/_form.html.erb:14:in `block in _app_views_items__form_html_erb___4548519784337921723_70140283876720'
+  app/views/items/_form.html.erb:1:in `_app_views_items__form_html_erb___4548519784337921723_70140283876720'
+  app/views/items/new.html.erb:4:in `_app_views_items_new_html_erb__4257644942072784773_70140267392040'
+
+Started POST "/__better_errors/ffc55b7ca10ade89/variables" for 127.0.0.1 at 2018-07-16 15:16:32 +1000
+Started POST "/__better_errors/ffc55b7ca10ade89/variables" for 127.0.0.1 at 2018-07-16 15:16:34 +1000
+Started POST "/__better_errors/ffc55b7ca10ade89/variables" for 127.0.0.1 at 2018-07-16 15:16:37 +1000
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 15:18:07 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (2.2ms)
+  Rendered items/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 403ms (Views: 399.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 15:18:19 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (2.0ms)
+  Rendered items/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 66ms (Views: 62.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 15:19:39 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (2.8ms)
+  Rendered items/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 92ms (Views: 88.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 15:19:51 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (2.3ms)
+  Rendered items/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 78ms (Views: 74.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 15:20:38 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (542.8ms)
+  Rendered items/new.html.erb within layouts/application (544.8ms)
+Completed 500 Internal Server Error in 557ms (ActiveRecord: 0.5ms)
+
+
+
+NameError - undefined local variable or method `show_item_path' for #<#<Class:0x00007f959766ebb0>:0x00007f959cee3bd8>:
+  app/views/items/_form.html.erb:15:in `block in _app_views_items__form_html_erb___4548519784337921723_70140279777420'
+  app/views/items/_form.html.erb:1:in `_app_views_items__form_html_erb___4548519784337921723_70140279777420'
+  app/views/items/new.html.erb:4:in `_app_views_items_new_html_erb__4257644942072784773_70140266079040'
+
+Started POST "/__better_errors/1ea2c9b70b35d5cf/variables" for 127.0.0.1 at 2018-07-16 15:20:38 +1000
+Started GET "/rails/info" for 127.0.0.1 at 2018-07-16 15:22:10 +1000
+Processing by Rails::InfoController#index as HTML
+Redirected to http://localhost:3000/rails/info/routes
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-07-16 15:22:10 +1000
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/misaelm/.rvm/gems/ruby-2.5.1/gems/railties-5.2.0/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/misaelm/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [21 times] (10.0ms)
+  Rendered /Users/misaelm/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/misaelm/.rvm/gems/ruby-2.5.1/gems/railties-5.2.0/lib/rails/templates/rails/info/routes.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 48ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-07-16 15:23:07 +1000
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/misaelm/.rvm/gems/ruby-2.5.1/gems/railties-5.2.0/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/misaelm/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [27 times] (5.0ms)
+  Rendered /Users/misaelm/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/misaelm/.rvm/gems/ruby-2.5.1/gems/railties-5.2.0/lib/rails/templates/rails/info/routes.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 30ms (Views: 24.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-16 15:23:45 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 66ms (Views: 45.3ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 15:23:49 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (3.9ms)
+  Rendered items/new.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 10.4ms)
+
+
+
+ActionController::UrlGenerationError - No route matches {:action=>"show", :controller=>"items"}, missing required keys: [:id]:
+  app/views/items/_form.html.erb:15:in `block in _app_views_items__form_html_erb___4548519784337921723_70140265505020'
+  app/views/items/_form.html.erb:1:in `_app_views_items__form_html_erb___4548519784337921723_70140265505020'
+  app/views/items/new.html.erb:4:in `_app_views_items_new_html_erb__4257644942072784773_70140279080100'
+
+Started POST "/__better_errors/cee0018010fd45e3/variables" for 127.0.0.1 at 2018-07-16 15:23:50 +1000
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 15:24:31 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (4.1ms)
+  Rendered items/new.html.erb within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.3ms)
+
+
+
+ActionController::UrlGenerationError - No route matches {:action=>"show", :controller=>"items"}, missing required keys: [:id]:
+  app/views/items/_form.html.erb:15:in `block in _app_views_items__form_html_erb___4548519784337921723_70140264483300'
+  app/views/items/_form.html.erb:1:in `_app_views_items__form_html_erb___4548519784337921723_70140264483300'
+  app/views/items/new.html.erb:4:in `_app_views_items_new_html_erb__4257644942072784773_70140253434900'
+
+Started POST "/__better_errors/5c316f28e86eb1ac/variables" for 127.0.0.1 at 2018-07-16 15:24:31 +1000
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 15:25:28 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (2.4ms)
+  Rendered items/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 91ms (Views: 87.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 15:25:33 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (2.3ms)
+  Rendered items/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 77ms (Views: 72.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 15:27:14 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (5.0ms)
+  Rendered items/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 78ms (Views: 74.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 15:29:13 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (28.0ms)
+  Rendered items/new.html.erb within layouts/application (30.0ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.8ms)
+
+
+
+NoMethodError - undefined method `condition' for #<Item:0x00007f959d6c6b70>:
+  app/views/items/_form.html.erb:12:in `block in _app_views_items__form_html_erb___4548519784337921723_70140284055820'
+  app/views/items/_form.html.erb:1:in `_app_views_items__form_html_erb___4548519784337921723_70140284055820'
+  app/views/items/new.html.erb:4:in `_app_views_items_new_html_erb__4257644942072784773_70140283988900'
+
+Started POST "/__better_errors/e5892d97083ed2a8/variables" for 127.0.0.1 at 2018-07-16 15:29:14 +1000
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 15:36:46 +1000
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/misaelm/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+:
+
+Started POST "/__better_errors/57e7b946bd5d3e79/variables" for 127.0.0.1 at 2018-07-16 15:36:46 +1000
+  [1m[35m (5.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2587405383361464750)[0m
+  ↳ bin/rails:9
+  [1m[35m (19.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddConditionToItems (20180716053052)
+  [1m[35m (30.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (15.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (22.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2587405383361464750)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2587405383361464750)[0m
+  ↳ bin/rails:9
+  [1m[35m (7.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddConditionToItems (20180716053052)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (9.9ms)[0m  [1m[35mALTER TABLE "items" ADD "condition" integer[0m
+  ↳ db/migrate/20180716053052_add_condition_to_items.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (12.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180716053052"]]
+  ↳ bin/rails:9
+  [1m[35m (12.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (2.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (10.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(2587405383361464750)[0m
+  ↳ bin/rails:9
+  [1m[35m (13.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (5.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/misaelm/.rvm/gems/ruby-2.5.1/bin/annotate:23
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 15:47:13 +1000
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/misaelm/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (5.0ms)
+  Rendered items/new.html.erb within layouts/application (273.5ms)
+Completed 200 OK in 394ms (Views: 354.2ms | ActiveRecord: 16.3ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 15:48:39 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (2.7ms)
+  Rendered items/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 56ms (Views: 53.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/items" for 127.0.0.1 at 2018-07-16 15:48:56 +1000
+
+AbstractController::ActionNotFound - The action 'create' could not be found for ItemsController:
+
+Started POST "/__better_errors/df91600a51e082fc/variables" for 127.0.0.1 at 2018-07-16 15:48:56 +1000
+Started POST "/items" for 127.0.0.1 at 2018-07-16 15:50:21 +1000
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t3XuzRJlT9+pWrrcLZpT8h0D6OrHnUZkVyXZnKXBnrzxgKxj+eKdYbcG1ABo83ouownSPEMcAf6yYzaEJFhkRA==", "item"=>{"image"=>"https://rincarnation.files.wordpress.com/2012/09/screen-shot-2012-09-22-at-14-11-49.png", "title"=>"wooden chair", "location"=>"Marrickville", "condition"=>"3"}, "commit"=>"Create Item"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 500 Internal Server Error in 268ms (ActiveRecord: 6.3ms)
+
+
+
+NameError - undefined local variable or method `item_params' for #<ItemsController:0x00007f959b778b88>
+Did you mean?  item_path:
+  app/controllers/items_controller.rb:16:in `create'
+
+Started POST "/__better_errors/531eb40746033203/variables" for 127.0.0.1 at 2018-07-16 15:50:22 +1000
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 16:02:39 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (2.8ms)
+  Rendered items/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 125ms (Views: 61.8ms | ActiveRecord: 29.5ms)
+
+
+Started POST "/items" for 127.0.0.1 at 2018-07-16 16:02:50 +1000
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oyLfYm34sy3xwoqQm3h6xEF42veemvsSUzBA9Qq0eeTl153Mhn9hk++e5EzeEVMY/3LgIRobvIi2dq/tiy2DHA==", "item"=>{"image"=>"https://rincarnation.files.wordpress.com/2012/09/screen-shot-2012-09-22-at-14-11-49.png", "title"=>"wooden chair", "location"=>"Marrickville", "condition"=>"3"}, "commit"=>"Create Item"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:16
+  [1m[36mItem Create (7.9ms)[0m  [1m[32mINSERT INTO "items" ("title", "location", "image", "created_at", "updated_at", "condition") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "wooden chair"], ["location", "Marrickville"], ["image", "https://rincarnation.files.wordpress.com/2012/09/screen-shot-2012-09-22-at-14-11-49.png"], ["created_at", "2018-07-16 06:02:50.970855"], ["updated_at", "2018-07-16 06:02:50.970855"], ["condition", 3]]
+  ↳ app/controllers/items_controller.rb:16
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/items_controller.rb:16
+Redirected to http://localhost:3000/items/9
+Completed 302 Found in 23ms (ActiveRecord: 14.8ms)
+
+
+Started GET "/items/9" for 127.0.0.1 at 2018-07-16 16:02:50 +1000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 60ms (Views: 55.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-16 16:03:08 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 51ms (Views: 46.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 16:03:10 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (2.1ms)
+  Rendered items/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 82ms (Views: 77.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/items" for 127.0.0.1 at 2018-07-16 16:04:14 +1000
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u/mr7q16orWOi6PRAIPSp1Qeh5e/AdCb1Y5pkcHI8LX9DOlARv1wC5DXzQ1F6vt76hS9QTuAlwEwyIaJQFEKTQ==", "item"=>{"image"=>"https://rincarnation.files.wordpress.com/2012/09/screen-shot-2012-09-22-at-14-11-49.png", "title"=>"wooden chair", "location"=>"Marrickville", "condition"=>"3"}, "commit"=>"Create Item"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:16
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("title", "location", "image", "created_at", "updated_at", "condition") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "wooden chair"], ["location", "Marrickville"], ["image", "https://rincarnation.files.wordpress.com/2012/09/screen-shot-2012-09-22-at-14-11-49.png"], ["created_at", "2018-07-16 06:04:14.137151"], ["updated_at", "2018-07-16 06:04:14.137151"], ["condition", 3]]
+  ↳ app/controllers/items_controller.rb:16
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/items_controller.rb:16
+Redirected to http://localhost:3000/items/10
+Completed 302 Found in 13ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/items/10" for 127.0.0.1 at 2018-07-16 16:04:14 +1000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 62ms (Views: 56.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items/" for 127.0.0.1 at 2018-07-16 16:04:24 +1000
+
+AbstractController::ActionNotFound - The action 'index' could not be found for ItemsController:
+
+Started POST "/__better_errors/5e8a1b21305956fd/variables" for 127.0.0.1 at 2018-07-16 16:04:24 +1000
+Started GET "/items/10" for 127.0.0.1 at 2018-07-16 16:05:27 +1000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:4
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 127ms (Views: 63.4ms | ActiveRecord: 27.3ms)
+
+
+Started GET "/items/10" for 127.0.0.1 at 2018-07-16 16:05:30 +1000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:4
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 75ms (Views: 69.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/items/10" for 127.0.0.1 at 2018-07-16 16:06:23 +1000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:4
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 76ms (Views: 71.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/items/10" for 127.0.0.1 at 2018-07-16 16:12:19 +1000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:4
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (322.8ms)
+Completed 200 OK in 393ms (Views: 386.7ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/items/10/edit" for 127.0.0.1 at 2018-07-16 16:12:45 +1000
+  
+ActionController::RoutingError (No route matches [POST] "/items/10/edit"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users" for 127.0.0.1 at 2018-07-16 16:14:05 +1000
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 105ms (Views: 84.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-07-16 16:19:56 +1000
+Processing by PagesController#contact as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 141ms (Views: 109.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-16 16:19:58 +1000
+Processing by PagesController#faq as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 109ms (Views: 76.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-16 16:20:00 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 74ms (Views: 69.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 16:20:03 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (3.1ms)
+  Rendered items/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 367ms (Views: 67.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 16:24:45 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (2.7ms)
+  Rendered items/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 115ms (Views: 107.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 16:25:03 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (2.2ms)
+  Rendered items/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 81ms (Views: 73.1ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/login" for 127.0.0.1 at 2018-07-16 16:25:13 +1000
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pTbAZHIAmXqH9+ApeZVSmmfh+LfS4Iwa7ETG/5rZZEfjw4LKmYdLxJmrjvU8/HtG2evCYVZhy4AJAinnG0Cevw=="}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-16 16:25:13 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 58ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-07-16 16:25:15 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 515ms (Views: 67.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-07-16 16:25:23 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Nn5zg/P1sy3cWN0QDb5mP8LGZQHVQS6ZuXzHVYj9y0NwizEtGHJhk8IEs8xI10/jfMxf11HAaQNcOihNCWQxuw==", "email"=>"trump@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "trump@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:6
+Redirected to http://localhost:3000/
+Completed 302 Found in 73ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-16 16:25:23 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 77ms (Views: 72.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/8/edit" for 127.0.0.1 at 2018-07-16 16:25:28 +1000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.2ms)
+  Rendered users/edit.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 146ms (Views: 85.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-16 16:25:38 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 53ms (Views: 49.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 16:25:52 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (3.3ms)
+  Rendered items/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 58ms (Views: 53.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/items/new10" for 127.0.0.1 at 2018-07-16 16:26:03 +1000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"new10"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:4
+Completed 404 Not Found in 5ms (ActiveRecord: 1.4ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Item with 'id'=new10:
+  app/controllers/items_controller.rb:4:in `show'
+
+Started POST "/__better_errors/032acf163ef5b3a1/variables" for 127.0.0.1 at 2018-07-16 16:26:03 +1000
+Started GET "/items/new/10" for 127.0.0.1 at 2018-07-16 16:26:09 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/items/new/10"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/__better_errors/032acf163ef5b3a1/variables" for 127.0.0.1 at 2018-07-16 16:26:15 +1000
+Started DELETE "/login" for 127.0.0.1 at 2018-07-16 16:26:18 +1000
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"J80VEXhE/bOtDu+HI2y6F5kvmQtPjz/hHNhjlTnZ/bVhOFe/k8MvDbNSgVtmBZPLJyWj3csOeHv5noyNuEAHTQ=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-16 16:26:18 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 44ms (Views: 41.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-07-16 16:26:21 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 47ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-07-16 16:26:32 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2vhY9RCopyQ3Ry7bdFGUqYnftwfUJ6x2z0oUHaaUSlWcDRpb+y91mikbQAcxOL11N9WN0VCm6+wqDPsFJw2wrQ==", "email"=>"misaelmdev@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "misaelmdev@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:6
+Redirected to http://localhost:3000/login
+Completed 302 Found in 72ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-07-16 16:26:32 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 43ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-07-16 16:26:38 +1000
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 62ms (Views: 58.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-16 16:26:40 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 61ms (Views: 57.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-16 16:26:43 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 70ms (Views: 66.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-07-16 16:26:45 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 70ms (Views: 67.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-07-16 16:26:51 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s063sCrWVCdHSrcA6Sr19etg1F14Vx6Ubiy5XkYGgLf1u/UewVGGmVkW2dysQ9wpVWrui/zWWQ6LalZGx596Tw==", "email"=>"misaelmdev@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "misaelmdev@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:6
+Redirected to http://localhost:3000/
+Completed 302 Found in 74ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-16 16:26:51 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 50ms (Views: 46.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 16:26:56 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (1.8ms)
+  Rendered items/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 59ms (Views: 54.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items/new/10" for 127.0.0.1 at 2018-07-16 16:27:02 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/items/new/10"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 16:27:11 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (2.0ms)
+  Rendered items/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 55ms (Views: 51.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/items" for 127.0.0.1 at 2018-07-16 16:27:28 +1000
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+8wptOBLFWEUZ/vdC49FiZszJu2icNtg6cLnFJQqera9OWsaC8zH3wo7lQFO5mxVJTkcOybxnPoMhAgMFbOATg==", "item"=>{"image"=>"https://rincarnation.files.wordpress.com/2012/09/screen-shot-2012-09-22-at-14-11-49.png", "title"=>"wooden chair", "location"=>"Marrickville", "condition"=>"3"}, "commit"=>"Create Item"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:16
+  [1m[36mItem Create (0.8ms)[0m  [1m[32mINSERT INTO "items" ("title", "location", "image", "created_at", "updated_at", "condition") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "wooden chair"], ["location", "Marrickville"], ["image", "https://rincarnation.files.wordpress.com/2012/09/screen-shot-2012-09-22-at-14-11-49.png"], ["created_at", "2018-07-16 06:27:28.951649"], ["updated_at", "2018-07-16 06:27:28.951649"], ["condition", 3]]
+  ↳ app/controllers/items_controller.rb:16
+  [1m[35m (7.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/items_controller.rb:16
+Redirected to http://localhost:3000/items/11
+Completed 302 Found in 15ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/items/11" for 127.0.0.1 at 2018-07-16 16:27:28 +1000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:4
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 57ms (Views: 52.8ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/items/11" for 127.0.0.1 at 2018-07-16 16:27:38 +1000
+
+AbstractController::ActionNotFound - The action 'destroy' could not be found for ItemsController:
+
+Started POST "/__better_errors/1ffe7f26450e0edd/variables" for 127.0.0.1 at 2018-07-16 16:27:38 +1000
+Started DELETE "/items/11" for 127.0.0.1 at 2018-07-16 16:29:19 +1000
+Processing by ItemsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4BeLtIQL2hG4GJYkHM/vym9y2KeTq9DQ3mms/j4+ISim4skab4wIr6ZE+PhZpsYW0XjicRcql0o7L0Pmv6fb0A==", "id"=>"11"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:22
+  [1m[36mItem Destroy (0.6ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 11]]
+  ↳ app/controllers/items_controller.rb:22
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/items_controller.rb:22
+Redirected to http://localhost:3000/items
+Completed 302 Found in 70ms (ActiveRecord: 36.4ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2018-07-16 16:29:19 +1000
+
+AbstractController::ActionNotFound - The action 'index' could not be found for ItemsController:
+
+Started POST "/__better_errors/8611d3cc038d0918/variables" for 127.0.0.1 at 2018-07-16 16:29:20 +1000
+Started GET "/items/11" for 127.0.0.1 at 2018-07-16 16:30:34 +1000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7
+Completed 404 Not Found in 46ms (ActiveRecord: 21.1ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Item with 'id'=11:
+  app/controllers/items_controller.rb:7:in `show'
+
+Started POST "/__better_errors/02f89b9a104696a2/variables" for 127.0.0.1 at 2018-07-16 16:30:35 +1000
+Started GET "/items/10" for 127.0.0.1 at 2018-07-16 16:30:41 +1000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 68ms (Views: 49.8ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/items/10" for 127.0.0.1 at 2018-07-16 16:30:49 +1000
+Processing by ItemsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NmZ6gfaMHR8405JqM4O7kl+Op3WUoLGWBxY4DVCTKRhwkzgvHQvPoSaP/LZ26pJO4YSdoxAh9gziUNcV0QrT4A==", "id"=>"10"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:25
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 10]]
+  ↳ app/controllers/items_controller.rb:25
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/items_controller.rb:25
+Redirected to http://localhost:3000/items
+Completed 302 Found in 8ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2018-07-16 16:30:49 +1000
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 500 Internal Server Error in 230ms (ActiveRecord: 0.3ms)
+
+
+
+NameError - undefined local variable or method `item' for #<ItemsController:0x00007f959ce1f788>:
+  app/controllers/items_controller.rb:3:in `index'
+
+Started POST "/__better_errors/8913c324da04953b/variables" for 127.0.0.1 at 2018-07-16 16:30:49 +1000
+Started GET "/items/9" for 127.0.0.1 at 2018-07-16 16:31:12 +1000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 135ms (Views: 64.8ms | ActiveRecord: 24.6ms)
+
+
+Started DELETE "/items/9" for 127.0.0.1 at 2018-07-16 16:31:17 +1000
+Processing by ItemsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2hPVsOooBuS4dQDVfuMc5dMB0vFNrSt55Jyu61Z00Aec5pceAa/UWqYpbgk7ijU5bQvoJ8ksbOMB2kHz1+0q/w==", "id"=>"9"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:25
+  [1m[36mItem Destroy (0.5ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 9]]
+  ↳ app/controllers/items_controller.rb:25
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/items_controller.rb:25
+Redirected to http://localhost:3000/items
+Completed 302 Found in 8ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2018-07-16 16:31:18 +1000
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 406 Not Acceptable in 118ms (ActiveRecord: 0.3ms)
+
+
+
+ActionController::UnknownFormat - ItemsController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.:
+
+Started POST "/__better_errors/0baa9e2dd5e6baaa/variables" for 127.0.0.1 at 2018-07-16 16:31:18 +1000
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  "items".* FROM "items" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/misaelm/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Item Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/misaelm/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Item Load (0.0ms)[0m  [1m[34mSELECT  "items".* FROM "items" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/misaelm/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Item Load (0.0ms)[0m  [1m[34mSELECT  "items".* FROM "items" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/misaelm/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Started GET "/items/9" for 127.0.0.1 at 2018-07-16 16:33:18 +1000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7
+Completed 404 Not Found in 6ms (ActiveRecord: 1.2ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Item with 'id'=9:
+  app/controllers/items_controller.rb:7:in `show'
+
+Started POST "/__better_errors/4fb7b8234f394a2c/variables" for 127.0.0.1 at 2018-07-16 16:33:18 +1000
+Started GET "/items/8" for 127.0.0.1 at 2018-07-16 16:33:23 +1000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7
+  Rendering items/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/items/show.html.erb:7
+  Rendered items/show.html.erb within layouts/application (40.7ms)
+Completed 200 OK in 431ms (Views: 131.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-16 16:33:37 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 95ms (Views: 86.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 16:33:41 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (10.0ms)
+  Rendered items/new.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 96ms (Views: 90.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/items" for 127.0.0.1 at 2018-07-16 16:33:48 +1000
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LRz8jD2/m//i95a8zT//LKmdvhT8YD34C6h8v5gYYadr6b4i1jhJQfyr+GCIVtbwF5eEwnjhemLu7pOnGYGbXw==", "item"=>{"image"=>"https://rincarnation.files.wordpress.com/2012/09/screen-shot-2012-09-22-at-14-11-49.png", "title"=>"wooden chair", "location"=>"Marrickville", "condition"=>"3"}, "commit"=>"Create Item"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:19
+  [1m[36mItem Create (1.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "location", "image", "created_at", "updated_at", "condition") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "wooden chair"], ["location", "Marrickville"], ["image", "https://rincarnation.files.wordpress.com/2012/09/screen-shot-2012-09-22-at-14-11-49.png"], ["created_at", "2018-07-16 06:33:48.750413"], ["updated_at", "2018-07-16 06:33:48.750413"], ["condition", 3]]
+  ↳ app/controllers/items_controller.rb:19
+  [1m[35m (7.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/items_controller.rb:19
+Redirected to http://localhost:3000/items/12
+Completed 302 Found in 16ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/items/12" for 127.0.0.1 at 2018-07-16 16:33:48 +1000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 98ms (Views: 91.6ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/items/12" for 127.0.0.1 at 2018-07-16 16:33:55 +1000
+Processing by ItemsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KwNz4j/PtamzjPmvz57BqeTnvgWwvMFZkjkbfKHlpAVt9jFM1EhnF63Ql3OK9+h1Wu2E0zQ9hsN3f/RkIHxe/Q==", "id"=>"12"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:24
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:25
+  [1m[36mItem Destroy (1.1ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 12]]
+  ↳ app/controllers/items_controller.rb:25
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/items_controller.rb:25
+Redirected to http://localhost:3000/items
+Completed 302 Found in 11ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2018-07-16 16:33:55 +1000
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:2
+  Rendered items/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 79ms (Views: 72.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-16 16:34:03 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 59ms (Views: 55.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 16:34:06 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (3.3ms)
+  Rendered items/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 81ms (Views: 76.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/items" for 127.0.0.1 at 2018-07-16 16:34:13 +1000
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"thj6ymTU/uZaQsjmYiWH2JTZOAM8km4R/hFnBAwzEBTw7bhkj1MsWEQepjonTK4EKtMC1bgTKYsbV4gcjarq7A==", "item"=>{"image"=>"https://rincarnation.files.wordpress.com/2012/09/screen-shot-2012-09-22-at-14-11-49.png", "title"=>"wooden chair", "location"=>"Marrickville", "condition"=>"3"}, "commit"=>"Create Item"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:19
+  [1m[36mItem Create (1.3ms)[0m  [1m[32mINSERT INTO "items" ("title", "location", "image", "created_at", "updated_at", "condition") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "wooden chair"], ["location", "Marrickville"], ["image", "https://rincarnation.files.wordpress.com/2012/09/screen-shot-2012-09-22-at-14-11-49.png"], ["created_at", "2018-07-16 06:34:13.200690"], ["updated_at", "2018-07-16 06:34:13.200690"], ["condition", 3]]
+  ↳ app/controllers/items_controller.rb:19
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/items_controller.rb:19
+Redirected to http://localhost:3000/items/13
+Completed 302 Found in 15ms (ActiveRecord: 7.6ms)
+
+
+Started GET "/items/13" for 127.0.0.1 at 2018-07-16 16:34:13 +1000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 65ms (Views: 58.9ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/items/13/edit" for 127.0.0.1 at 2018-07-16 16:34:19 +1000
+  
+ActionController::RoutingError (No route matches [POST] "/items/13/edit"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/items/13/edit" for 127.0.0.1 at 2018-07-16 16:35:52 +1000
+  
+ActionController::RoutingError (No route matches [POST] "/items/13/edit"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-07-16 16:42:08 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 52ms (Views: 48.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/7/edit" for 127.0.0.1 at 2018-07-16 16:42:11 +1000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (1.8ms)
+  Rendered users/edit.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 87ms (Views: 79.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-16 16:42:14 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 58ms (Views: 53.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 16:42:16 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (2.3ms)
+  Rendered items/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 88ms (Views: 82.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/items/items" for 127.0.0.1 at 2018-07-16 16:42:26 +1000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"items"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mItem Load (1.0ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7
+Completed 404 Not Found in 4ms (ActiveRecord: 1.5ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Item with 'id'=items:
+  app/controllers/items_controller.rb:7:in `show'
+
+Started POST "/__better_errors/77408a4b5ae4715f/variables" for 127.0.0.1 at 2018-07-16 16:42:27 +1000
+Started GET "/items/item" for 127.0.0.1 at 2018-07-16 16:42:34 +1000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"item"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7
+Completed 404 Not Found in 5ms (ActiveRecord: 1.4ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Item with 'id'=item:
+  app/controllers/items_controller.rb:7:in `show'
+
+Started POST "/__better_errors/294a3a42315cfbf8/variables" for 127.0.0.1 at 2018-07-16 16:42:34 +1000
+Started GET "/items" for 127.0.0.1 at 2018-07-16 16:42:39 +1000
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:2
+  Rendered items/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 68ms (Views: 62.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-16 16:44:38 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 110ms (Views: 98.5ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/login" for 127.0.0.1 at 2018-07-16 16:44:43 +1000
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wzfEk3mEbvU6FlwCIDU7DRBcdNYG0woG2plLSCrhaOCFwoY9kgO8SyRKMt5lXBLRrlZOAIJSTZw/36RQq3iSGA=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-16 16:44:43 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 55ms (Views: 52.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-07-16 16:44:48 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 77ms (Views: 74.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-07-16 16:44:52 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+Mt1u6XLmhF4Eci1I97qU4oAst/mPcHLpT/5BTj9jvK+PjcVTkxIr2ZNpmlmt8OPNAqICWK8hlFAeRYduWR0Cg==", "email"=>"misaelmdev@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "misaelmdev@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:6
+Redirected to http://localhost:3000/
+Completed 302 Found in 73ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-16 16:44:52 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 73ms (Views: 69.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-16 16:45:06 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 54ms (Views: 49.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-16 16:45:08 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 79ms (Views: 73.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-16 16:46:33 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 53ms (Views: 49.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/7/edit" for 127.0.0.1 at 2018-07-16 16:48:28 +1000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (1.7ms)
+  Rendered users/edit.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 58ms (Views: 53.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-16 16:48:32 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 54ms (Views: 50.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 16:48:35 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (2.3ms)
+  Rendered items/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 71ms (Views: 66.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2018-07-16 16:49:38 +1000
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:2
+  Rendered items/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 55ms (Views: 50.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/items/13" for 127.0.0.1 at 2018-07-16 16:49:42 +1000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 56ms (Views: 50.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/items/13/edit" for 127.0.0.1 at 2018-07-16 16:49:53 +1000
+Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/edit.html.erb within layouts/application
+  Rendered items/edit.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.3ms)
+
+
+
+SyntaxError - syntax error, unexpected tLABEL
+...@output_buffer.append=( render: partial => 'form' );
+...                        ^~~~~~~:
+  app/views/items/edit.html.erb:1:in `'
+
+Started POST "/__better_errors/025085eab9e5ccc9/variables" for 127.0.0.1 at 2018-07-16 16:49:54 +1000
+Started GET "/items/13/edit" for 127.0.0.1 at 2018-07-16 16:55:12 +1000
+Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/edit.html.erb within layouts/application
+  Rendered items/edit.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.4ms)
+
+
+
+SyntaxError - syntax error, unexpected tLABEL
+...@output_buffer.append=( render: partial => 'form' );
+...                        ^~~~~~~:
+  app/views/items/edit.html.erb:1:in `'
+
+Started POST "/__better_errors/8a20c2ec8d7c785c/variables" for 127.0.0.1 at 2018-07-16 16:55:12 +1000
+Started GET "/items/13" for 127.0.0.1 at 2018-07-16 16:56:40 +1000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 74ms (Views: 65.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/items/13/edit" for 127.0.0.1 at 2018-07-16 16:56:44 +1000
+Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/edit.html.erb within layouts/application
+  Rendered items/_form.html.erb (4.6ms)
+  Rendered items/edit.html.erb within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.3ms)
+
+
+
+ArgumentError - First argument in form cannot contain nil or be empty:
+  app/views/items/_form.html.erb:1:in `_app_views_items__form_html_erb___4548519784337921723_70140253452780'
+  app/views/items/edit.html.erb:2:in `_app_views_items_edit_html_erb__1340013455085235951_70140266888340'
+
+Started POST "/__better_errors/f3a223e2a3235714/variables" for 127.0.0.1 at 2018-07-16 16:56:44 +1000
+Started POST "/__better_errors/f3a223e2a3235714/eval" for 127.0.0.1 at 2018-07-16 16:56:59 +1000
+Started GET "/items/13/edit" for 127.0.0.1 at 2018-07-16 16:57:56 +1000
+Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:11
+  Rendering items/edit.html.erb within layouts/application
+  Rendered items/_form.html.erb (4.5ms)
+  Rendered items/edit.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 131ms (Views: 89.0ms | ActiveRecord: 15.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-16 16:58:08 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 48ms (Views: 44.4ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/login" for 127.0.0.1 at 2018-07-16 16:58:14 +1000
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ZcuVmnIZNSuqTC8AK09wF9lS4jnbFNHi4yWokiZEA6ojPtc0mZ7nlbQQQdxuJlnLZ1jY71+VlngGY0eKp935Ug=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-16 16:58:14 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 61ms (Views: 58.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-07-16 16:58:17 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 58ms (Views: 54.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-07-16 16:58:24 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9d9oy4ppMw+3XpWDuCz48jY9PNprjmDKikMc204fRTizKiplYe7hsakC+1/9RdEuiDcGDO8PJ1BvBfPDz4a/wA==", "email"=>"misaelmdev@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "misaelmdev@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:6
+Redirected to http://localhost:3000/
+Completed 302 Found in 72ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-16 16:58:24 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 64ms (Views: 60.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 16:59:40 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (2.2ms)
+  Rendered items/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 60ms (Views: 54.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2018-07-16 16:59:46 +1000
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:2
+  Rendered items/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 59ms (Views: 55.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-16 17:00:20 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 78ms (Views: 74.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2018-07-16 17:00:23 +1000
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (1.9ms)
+  Rendered items/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 66ms (Views: 61.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items/10" for 127.0.0.1 at 2018-07-16 17:00:34 +1000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7
+Completed 404 Not Found in 4ms (ActiveRecord: 0.8ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Item with 'id'=10:
+  app/controllers/items_controller.rb:7:in `show'
+
+Started POST "/__better_errors/d0113d21ffeca68a/variables" for 127.0.0.1 at 2018-07-16 17:00:34 +1000
+Started GET "/items/9" for 127.0.0.1 at 2018-07-16 17:00:39 +1000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7
+Completed 404 Not Found in 5ms (ActiveRecord: 1.3ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Item with 'id'=9:
+  app/controllers/items_controller.rb:7:in `show'
+
+Started POST "/__better_errors/00ed87b000b2d298/variables" for 127.0.0.1 at 2018-07-16 17:00:39 +1000
+Started GET "/item/9" for 127.0.0.1 at 2018-07-16 17:00:45 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/item/9"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/items/13" for 127.0.0.1 at 2018-07-16 17:00:56 +1000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 69ms (Views: 61.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/items/13" for 127.0.0.1 at 2018-07-16 17:08:40 +1000
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/misaelm/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (30.8ms)
+Completed 200 OK in 1112ms (Views: 948.0ms | ActiveRecord: 28.8ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-07-16 17:08:46 +1000
+Processing by PagesController#contact as HTML
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 71ms (Views: 50.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-16 17:08:48 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 81ms (Views: 54.2ms | ActiveRecord: 0.8ms)
+
+

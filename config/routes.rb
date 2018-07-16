@@ -22,8 +22,8 @@ Rails.application.routes.draw do
   root :to => 'pages#home'
   get '/contact' => 'pages#contact'
   get '/faq' => 'pages#faq'
-  resources :users, :only => [:new, :create, :index, :edit]
-  resources :items, :only => [:new, :create, :post]
+  resources :users
+  resources :items
   get '/login' => 'session#new' # login form
   post '/login' => 'session#create' # perform a login
   delete '/login' => 'session#destroy' # perform a log out
