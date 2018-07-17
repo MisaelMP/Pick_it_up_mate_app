@@ -1,32 +1,32 @@
 $primary-color: #f7faff;
+$secondary-color: #14a3aa;
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+body {
+  padding-top: 54px;
+}
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
 
-  li {
-    float: left;
-
-    a {
-      display: block;
-      color: $primary-color;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-
-      &:hover {
-        /* Change the link color to #111 (black) on hover */
-        background-color: #111;
-      }
-    }
+  .title {
+    font-size: 2vw;
+    padding: 1em;
+    font-family: 'Abril Fatface', cursive;
+  }
+}
+@media (max-width: 500px) {
+  .title {
+    font-size: 5vw;
+    padding: 1em;
+    font-family: 'Abril Fatface', cursive;
   }
 }
 
 h1 {
   text-align: center;
+  margin-top: 3em;
 }
 
 h2 {
@@ -34,27 +34,215 @@ h2 {
   margin-top: 3em;
 }
 
-.flex-container {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  justify-content: space-around;
-}
+table {
+  font-family: 'Arial';
+  margin: 25px auto;
+  border-collapse: collapse;
+  border: 1px solid #eee;
+  border-bottom: 2px solid #00cccc;
+  box-shadow: 0 0 20px rgba(0,0,0,0.10), 0 10px 20px rgba(0,0,0,0.05), 0 20px 20px rgba(0,0,0,0.05), 0 30px 20px rgba(0,0,0,0.05);
 
-.brand {
-  font-size: 2vw;
-  color: $primary-color;
-  margin-left: 50%;
-}
+  tr {
+    &:hover {
+      background: #f4f4f4;
 
-.logo {
-  img {
-    max-width: 3vw;
+      td {
+        color: #555;
+      }
+    }
   }
+
+  td,
+  th {
+    color: #999;
+    border: 1px solid #eee;
+    padding: 12px 35px;
+    border-collapse: collapse;
+  }
+
+  th {
+    background: #00cccc;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+
+    &.last {
+      border-right: none;
+    }
+  }
+}
+
+.form-bg {
+  background: url("../images/img-1.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.form-bg:before {
+  content: "";
+  width: 100%;
+  height: 110%;
+  background: rgba(73, 116, 130, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+}
+
+.form-horizontal {
+  padding: 60px 40px 55px;
+  margin-top: 40px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.form-horizontal:before {
+  content: "\f007";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  width: 100px;
+  height: 100px;
+  line-height: 96px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  background: $secondary-color;
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+}
+
+.form-horizontal .heading {
+  display: block;
+  font-size: 28px;
+  color: #597886;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-horizontal .form-group {
+  margin: 0 0 30px;
+  position: relative;
+}
+
+.form-horizontal .form-group:last-child {
+  margin: 0;
+}
+
+.form-horizontal .form-control {
+  height: 50px;
+  border: 2px solid #cbe9ea;
+  border-radius: 5px;
+  box-shadow: none;
+  padding: 0 20px 0 26%;
+  font-size: 16px;
+  font-weight: bold;
+  color: #94abb6;
+  position: relative;
+  transition: all 0.3s ease 0s;
+}
+
+.form-horizontal .form-control:focus {
+  box-shadow: none;
+  outline: 0 none;
+}
+
+.form-horizontal .control-label {
+  width: 25%;
+  height: 46px;
+  line-height: 46px;
+  background: #f5ffff;
+  padding: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #94abb6;
+  text-transform: capitalize;
+  text-align: center;
+  border-right: 2px solid #cbe9ea;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  z-index: 1;
+}
+
+.form-horizontal .btn,
+.form-horizontal .btn:focus {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 30px;
+  background: $secondary-color;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.form-horizontal .btn:hover {
+  background: $secondary-color;
+}
+
+.form-horizontal .btn:before {
+  content: "\f084";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.form-horizontal .forgot-pass,
+.form-horizontal .signup {
+  display: inline-block;
+  font-size: 17px;
+  font-weight: bold;
+  color: $secondary-color;
+}
+
+.form-horizontal .forgot-pass {
+  float: right;
+  color: $secondary-color;
+}
+@media only screen and (max-width: 990px) {
+  .form-horizontal:before {
+    top: -20px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .form-horizontal {
+    padding: 60px 20px 40px;
+  }
+
+  .form-horizontal .control-label {
+    font-size: 12px;
+  }
+}
+
+.background-home {
+  // background: url(../images/img-1.jpg);
+  // background-size: cover;
+  // position: relative;
+  // background-color:$secondary-color;
+  // content: "";
+  // display: flex;
+  //   justify-content: space-between;
+  //
+  //   padding: 20px;
+  //   height: 300px;
+  //   background: lightsteelblue;
+  // float: left;
+  width: 100%;
+  height: 500px;
+  // margin: 5px;
+  background-color: $secondary-color;
 }

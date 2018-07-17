@@ -1,1 +1,28 @@
-<%= render :partial => 'form' %>
+<% if @current_user.present? %>
+  <h1>Customise your profile!
+    <%= @current_user.name %></h1>
+  <% if @current_user.image? %>
+    <%= image_tag @current_user.image %>
+  <% else %>
+    <%= image_tag 'https://www.goaltos.com/wp-content/uploads/sites/4559/2018/01/avatar-1577909_960_720.png', :class => 'rounded mx-auto d-block mx-auto w-25 p-3' %>
+  <% end %>
+  <div class="btn-toolbar justify-content-center">
+    <%= button_to "Post item", new_item_path, :class => 'btn btn-primary', :method => 'get'%>
+  </div>
+<% end %>
+
+<%= form_for @user do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+
+<%= f.label :image %>
+<%= f.text_field :image %>
+
+<%= f.label :password %>
+<%= f.password_field :password %>
+
+<%= f.label :password_confirmation %>
+<%= f.password_field :password_confirmation %>
+
+<%= f.submit "Save!" %>
+<% end %>

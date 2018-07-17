@@ -61,3 +61,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap', '~> 4.1.1'
 gem 'jquery-rails'
+gem 'geocoder', '1.4.7'
+gem 'gmaps4rails'
+gem 'underscore-rails'

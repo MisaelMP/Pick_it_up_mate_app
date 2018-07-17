@@ -9,6 +9,16 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
+  def update
+    user = User.find params[:id]
+    user.update user_params
+    redirect_to user
+  end
+
+  # def edit
+  #   @user = User.find params[:id]
+  # end
+
   def create
     @user = User.new user_params
     if @user.save
@@ -19,13 +29,20 @@ class UsersController < ApplicationController
     end
   end
 
-
   def edit
     @user = @current_user
   end
 
+  def destroy
+    item = Item.find params[:id]
+      item.destroy
+      redirect_to items_path
+  end
+
+
+
   private
   def user_params
-    params.require(:user).permit(:email, :password, :password_confirmation)
+    params.require(:user).permit(:name, :image, :email, :password, :password_confirmation)
   end
 end

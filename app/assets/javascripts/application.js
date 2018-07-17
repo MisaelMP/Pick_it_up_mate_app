@@ -13,6 +13,8 @@
 //= require rails-ujs
 //= require activestorage
 //= require jquery3
+//= require underscore
+//= require gmaps/google
 //= require popper
 //= require bootstrap-sprockets
 //= require_tree .

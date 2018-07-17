@@ -1,21 +1,34 @@
 <h1><%= @item.title %></h1>
 <%= image_tag @item.image, :alt => @item.title %>
-<ul>
-  <li>Title:
-    <%= @item.title %>
-  </li>
-  <% if @item.user.present? %>
-  <li>
-    User:  <%= link_to @item.user.name, @item.user %>
-    </li>
-    <% end %>
-  <li>
-    Location:
-    <%= @item.location %></li>
-  <li>Condition:
-    <%= @item.condition %></li>
-</ul>
-<div class="controls">
-<%= button_to "Edit Item", edit_item_path(@item), :method => 'get' %>
-<%= button_to "Delete item", item_path(@item), :method => 'delete', :data => {:confirm => 'Are you sure?'} %>
-</div>
+<table>
+  <thead>
+    <tr>
+      <th>Title:
+        <%= @item.title %>
+      </th>
+      <% if @item.user.present? %>
+        <th>
+          User:
+          <%= link_to @item.user.name, @item.user %>
+        </th>
+      <% end %>
+      <th>
+        Address:
+        <th><%= @item.address %></th>
+        <th><%= @item.longitude %></th>
+        <th><%= @item.latitude %></th>
+
+        <div class="card">
+          <div class="card-block" style='width: 400px'>
+            <div id="map" style='width: 400px; height: 400px;' data-latitude="<%= @item.latitude %>" data-longitude="<%= @item.longitude %>" data-title="<%= @item.title %>"></div>
+          </div>
+        </div>
+        <th>Condition:
+          <%= @item.condition %></th>
+      </tr>
+    </thead>
+  </table>
+  <div class="controls">
+    <%= button_to "Edit Item", edit_item_path(@item), :method => 'get' %>
+    <%= button_to "Delete item", item_path(@item), :method => 'delete', :data => {:confirm => 'Are you sure?'} %>
+  </div>
