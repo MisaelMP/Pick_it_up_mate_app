@@ -11,7 +11,7 @@
           <% if @current_user.image? %>
             <%= image_tag @current_user.image, :class => "avatar img-circle img-thumbnail" %>
           <% else %>
-            <%= image_tag 'https://www.goaltos.com/wp-content/uploads/sites/4559/2018/01/avatar-1577909_960_720.png', :class => "avatar img-circle" %>
+            <%= image_tag 'https://www.goaltos.com/wp-content/uploads/sites/4559/2018/01/avatar-1577909_960_720.png', :class => "avatar img-circle img-thumbnail" %>
             <h6>Upload a different photo...</h6>
           <% end %>
         </div>
