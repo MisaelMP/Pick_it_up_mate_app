@@ -1,5 +1,9 @@
 <h1><%= @item.title %></h1>
-<%= image_tag @item.image, :alt => @item.title %>
+<div class="d-flex justify-content-center">
+  <div class="p-2">
+    <%= image_tag @item.image, :class => 'img-thumbnail', :alt => @item.title %>
+  </div>
+</div>
 <table>
   <thead>
     <tr>
@@ -17,18 +21,21 @@
         <th><%= @item.address %></th>
         <th><%= @item.longitude %></th>
         <th><%= @item.latitude %></th>
-
-        <div class="card">
-          <div class="card-block" style='width: 400px'>
-            <div id="map" style='width: 400px; height: 400px;' data-latitude="<%= @item.latitude %>" data-longitude="<%= @item.longitude %>" data-title="<%= @item.title %>"></div>
-          </div>
-        </div>
         <th>Condition:
           <%= @item.condition %></th>
       </tr>
     </thead>
   </table>
-  <div class="controls">
-    <%= button_to "Edit Item", edit_item_path(@item), :method => 'get' %>
-    <%= button_to "Delete item", item_path(@item), :method => 'delete', :data => {:confirm => 'Are you sure?'} %>
+  <div class="d-flex justify-content-center">
+    <div class="card">
+      <div class="card-block" style='width: 400px'>
+        <div id="map" style='width: 400px; height: 400px;' data-latitude="<%= @item.latitude %>" data-longitude="<%= @item.longitude %>" data-title="<%= @item.title %>"></div>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center">
+  <div class="col-md-2 d-flex">
+    <%= button_to "Edit Item", edit_item_path(@item), :class => 'btn btn-primary button_item', :method => 'get' %>
+    <%= button_to "Delete item", item_path(@item), :class => 'btn btn-primary button_item', :method => 'delete', :data => {:confirm => 'Are you sure?'} %>
+  </div>
   </div>

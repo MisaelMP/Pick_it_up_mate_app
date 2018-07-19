@@ -54,10 +54,14 @@
               </li>
             <% else %>
               <li class="nav-item">
-                <%= link_to 'Sign up', new_user_path, :class => 'nav-link' %>
+                <%= link_to new_user_path, class: 'nav-link' do %>
+                <i class="fas fa-user-plus"></i> Sign Up
+                <% end %>
               </li>
               <li class="nav-item">
-                <%= link_to 'Log in', login_path, :class => 'nav-link' %>
+                <%= link_to login_path, class: 'nav-link' do %>
+                <i class="fas fa-sign-in-alt"></i> Log In
+              <% end %>
               </li>
             <% end %>
           </ul>

@@ -1,14 +1,19 @@
 $primary-color: #f7faff;
 $secondary-color: #14a3aa;
+$tertiary-color: #faf9f4;
+$bg-start: #9d9181;
+$bg-end: #9e866c;
+$card-bg: #e6e5e1;
+$dribbble-color: #ea4b89;
+$twitter-color: #68aade;
+$facebook-color: #3b5999;
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 body {
-  padding-top: 54px;
+  padding-top: 130px!important;
 }
 @media (min-width: 992px) {
-  body {
-    padding-top: 56px;
-  }
 
   .title {
     font-size: 2vw;
@@ -21,7 +26,15 @@ body {
     font-size: 5vw;
     padding: 1em;
     font-family: 'Abril Fatface', cursive;
+
   }
+  body {
+    padding-top: 140px!important;
+  }
+}
+
+.title {
+  font-family: 'Abril Fatface', cursive;
 }
 
 h1 {
@@ -31,7 +44,31 @@ h1 {
 
 h2 {
   text-align: center;
-  margin-top: 3em;
+  margin-top: 2em;
+  font-family: 'Lato', sans-serif;
+}
+
+.subtitle span {
+display: inline-block;
+position: relative;
+}
+.subtitle span:before,
+.subtitle span:after {
+content: "";
+position: absolute;
+height: 2px;
+border-bottom: 2px solid $secondary-color;
+border-top: 2px solid $secondary-color;
+top: .75em; /* 50% of line-height */
+width: 100%;
+}
+.subtitle span:before {
+right: 100%;
+margin-right: 15px;
+}
+.subtitle span:after {
+left: 100%;
+margin-left: 15px;
 }
 
 table {
@@ -39,7 +76,7 @@ table {
   margin: 25px auto;
   border-collapse: collapse;
   border: 1px solid #eee;
-  border-bottom: 2px solid #00cccc;
+  border-bottom: 2px solid $secondary-color;
   box-shadow: 0 0 20px rgba(0,0,0,0.10), 0 10px 20px rgba(0,0,0,0.05), 0 20px 20px rgba(0,0,0,0.05), 0 30px 20px rgba(0,0,0,0.05);
 
   tr {
@@ -61,8 +98,8 @@ table {
   }
 
   th {
-    background: #00cccc;
-    color: #fff;
+    background: $secondary-color;
+    color: $tertiary-color;
     text-transform: uppercase;
     font-size: 12px;
 
@@ -72,11 +109,10 @@ table {
   }
 }
 
-.form-bg {
-  background: url("../images/img-1.jpg");
-  background-size: cover;
-  position: relative;
-}
+// .form-bg {
+//
+//
+// }
 
 .form-bg:before {
   content: "";
@@ -92,7 +128,7 @@ table {
 .form-horizontal {
   padding: 60px 40px 55px;
   margin-top: 40px;
-  background: #fff;
+  background: $tertiary-color;
   border-radius: 10px;
 }
 
@@ -104,10 +140,10 @@ table {
   height: 100px;
   line-height: 96px;
   border-radius: 50%;
-  border: 4px solid #fff;
+  border: 4px solid $tertiary-color;
   background: $secondary-color;
   font-size: 40px;
-  color: #fff;
+  color: $tertiary-color;
   text-align: center;
   margin: 0 auto;
   position: absolute;
@@ -181,7 +217,7 @@ table {
   border-radius: 6px;
   font-size: 18px;
   font-weight: bold;
-  color: #fff;
+  color: $tertiary-color;
   text-transform: uppercase;
   position: relative;
 }
@@ -198,7 +234,7 @@ table {
   top: 0;
   left: 30px;
   font-size: 24px;
-  color: #fff;
+  color: $tertiary-color;
 }
 
 .form-horizontal .forgot-pass,
@@ -226,27 +262,217 @@ table {
   .form-horizontal .control-label {
     font-size: 12px;
   }
+
+  .alert {
+    font-size: 1vw !important;
+    font-family: 'Lato', sans-serif;
+  }
 }
 
 .background-home {
-  // background: url(../images/img-1.jpg);
-  // background-size: cover;
-  // position: relative;
-  // background-color:$secondary-color;
-  // content: "";
-  // display: flex;
-  //   justify-content: space-between;
-  //
-  //   padding: 20px;
-  //   height: 300px;
-  //   background: lightsteelblue;
-  // float: left;
+
   width: 100%;
   height: 500px;
   // margin: 5px;
-  background-color: $secondary-color;
+  background: url(pickitup.png);
+  background-size: cover;
+  position: relative;
+  &:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+  }
 }
 
 .searchbox {
   margin: 2em;
+}
+
+.alert {
+  text-align: center;
+  color: $secondary-color;
+  font-size: 2.5vw;
+  font-family: 'Lato', sans-serif;
+}
+.card-profile {
+  width: 340px;
+  margin: 50px auto;
+  background-color: $card-bg;
+  border-radius: 0;
+  border: 0;
+  box-shadow: 1em 1em 2em rgba(0,0,0,.2);
+
+  .card-img-top {
+    border-radius: 0;
+  }
+
+  .card-img-profile {
+    max-width: 100%;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: -95px;
+    margin-bottom: 35px;
+    border: 5px solid $card-bg;
+  }
+
+  .card-title {
+    margin-bottom: 50px;
+
+    small {
+      display: block;
+      font-size: .6em;
+      margin-top: .2em;
+    }
+  }
+
+  .card-links {
+    margin-bottom: 25px;
+
+    .fa {
+      margin: 0 1em;
+      font-size: 1.6em;
+
+      &:focus,
+      &:hover {
+        text-decoration: none;
+      }
+
+      &.fa-dribbble {
+        color: $dribbble-color;
+        font-weight: bold;
+
+        &:hover {
+          color: darken($dribbble-color, 10%);
+        }
+      }
+
+      &.fa-twitter {
+        color: $twitter-color;
+
+        &:hover {
+          color: darken($twitter-color, 10%);
+        }
+      }
+
+      &.fa-facebook {
+        color: $facebook-color;
+
+        &:hover {
+          color: darken($facebook-color, 10%);
+        }
+      }
+    }
+  }
+}
+
+.homepage-link {
+  text-decoration: none;
+  color: #211d20;
+  margin-top: 3em;
+
+  &:hover {
+    opacity: 0.5;
+  }
+  &:visited {
+  color: #211d20;
+  }
+}
+.square-side {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 50px solid transparent;
+  border-top-width: 0;
+  border-bottom-width: 0;
+  height: 100%;
+  width: 0;
+  z-index: -1;
+  transition: all 0.1s ease-out;
+  -webkit-transition: all 0.1s ease-out;
+}
+.trapezoid-side {
+  border-top-width: 10px;
+  border-bottom-width: 10px;
+  border-radius: .2em;
+  top: -10px;
+}
+/* button homepage */
+.button_home {
+  font-size: 1em;
+  color: $tertiary-color;
+  display: block;
+  margin: 2em auto;
+  height: 50px;
+  background: $secondary-color;
+  border: none;
+  position: relative;
+  width: 100px;
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  box-shadow: 0 0 .25em #333;
+  cursor: pointer;
+  outline: none;
+  /* mashed state */
+}
+.button_home::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 50px solid transparent;
+  border-top-width: 0;
+  border-bottom-width: 0;
+  height: 100%;
+  width: 0;
+  z-index: -1;
+  transition: all 0.1s ease-out;
+  -webkit-transition: all 0.1s ease-out;
+  border-left-color: $secondary-color;
+}
+.button_home::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 50px solid transparent;
+  border-top-width: 0;
+  border-bottom-width: 0;
+  height: 100%;
+  width: 0;
+  z-index: -1;
+  transition: all 0.1s ease-out;
+  -webkit-transition: all 0.1s ease-out;
+  border-right-color: $secondary-color;
+}
+.button_home:active {
+  -webkit-transform: scale(1.2, 0.8);
+}
+.button_home:active::before {
+  border-top-width: 10px;
+  border-bottom-width: 10px;
+  border-radius: .2em;
+  top: -10px;
+  border-left-color: $secondary-color;
+}
+.button_home:active::after {
+  border-top-width: 10px;
+  border-bottom-width: 10px;
+  border-radius: .2em;
+  top: -10px;
+  border-right-color: $secondary-color;
+}
+/* end button */
+
+.button_edit {
+  margin-right: 1em !important;
+}
+.button_item {
+  margin: 2em 2em 0  0 !important;
 }

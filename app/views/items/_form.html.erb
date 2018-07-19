@@ -1,15 +1,47 @@
-<%= form_for @item do |f| %>
-<%= f.label :image %>
-<%= f.text_field :image %>
 
-<%= f.label :title %>
-<%= f.text_field :title %>
+<div class="container d-flex justify-content-center">
+<div class="col-md-9 personal-info">
+  <div class="alert alert-info alert-dismissable">
+    <a class="panel-close close" data-dismiss="alert">×</a>
+    <i class="fa fa-coffee"></i>
+    <%= @current_user.name %>
+    post an Item
+  </div>
+  <h3>Personal info</h3>
+  <%= form_for(@item, :html => { :multipart => true}) do |f| %>
+  <div class="form-group">
+    <%= f.label :image, :class => 'col-md-3 control-label' %>
+    <div class="col-md-8">
+      <%= f.file_field :image, :class => "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :title, :class => 'col-md-3 control-label' %>
+    <div class="col-md-8">
+      <%= f.text_field :title, :class => "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :address, :class => 'col-md-3 control-label' %>
+    <div class="col-lg-8">
+      <%= f.text_field :address, :class => "form-control" %>
+    </div>
+  </div>
 
-<%= f.label :address %>
-<%= f.text_field :address %>
+  <div class="form-group">
+    <%= f.label :condition, :class => 'col-md-3 control-label' %>
+    <div class="col-md-8">
+      <%= f.text_field :condition, :class => "form-control" %>
+    </div>
+  </div>
 
-<%= f.label :condition %>
-<%= f.text_field :condition %>
+  <div class="form-group">
 
-<%= f.submit %>
+    <div class="col-md-6 d-flex ">
+      <%= f.submit "Post item!", :class => 'btn btn-primary button_edit'%>
+
+    </div>
+  </div>
+</div>
 <% end %>
+</div>

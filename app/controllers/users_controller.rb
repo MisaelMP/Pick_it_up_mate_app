@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :check_for_admin, :only => [:index]
+  before_action :check_for_admin, only: [:index]
 
   def index
     @users = User.all
@@ -12,6 +12,14 @@ class UsersController < ApplicationController
   def update
     user = User.find params[:id]
     user.update user_params
+    if params['user']['image']
+      cloudinary = Cloudinary::Uploader.upload(params['user']['image'])
+      user.image = cloudinary['url']
+    else
+      user.image = 'https://www.goaltos.com/wp-content/uploads/sites/4559/2018/01/avatar-1577909_960_720.png'
+
+    end
+    user.save
     redirect_to user
   end
 
@@ -35,14 +43,13 @@ class UsersController < ApplicationController
 
   def destroy
     item = Item.find params[:id]
-      item.destroy
-      redirect_to items_path
+    item.destroy
+    redirect_to items_path
   end
 
-
-
   private
+
   def user_params
-    params.require(:user).permit(:name, :image, :email, :password, :password_confirmation)
+    params.require(:user).permit(:name, :email, :password, :password_confirmation)
   end
 end

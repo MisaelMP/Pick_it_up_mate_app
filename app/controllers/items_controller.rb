@@ -1,19 +1,29 @@
 class ItemsController < ApplicationController
   def index
-   @items = Item.all
+    @items = Item.all
+    @items = if params[:search]
+               Item.search(params[:search]).order('created_at DESC')
+             else
+               Item.all.order('created_at DESC')
+            end
  end
 
   def show
- @item = Item.find params[:id]
+    @item = Item.find params[:id]
   end
 
   def edit
-  @item = Item.find params[:id]
+    @item = Item.find params[:id]
   end
 
   def update
     item = Item.find params[:id]
     item.update item_params
+    if params['item']['image']
+      cloudinary = Cloudinary::Uploader.upload(params['item']['image'])
+      item.image = cloudinary['url']
+      item.save
+    end
     redirect_to item
   end
 
@@ -28,18 +38,13 @@ class ItemsController < ApplicationController
 
   def destroy
     item = Item.find params[:id]
-      item.destroy
-      redirect_to items_path
+    item.destroy
+    redirect_to items_path
   end
-
-  def self.search(search)
-  where("title ILIKE ? OR address ILIKE ? OR image ILIKE ? OR condition ILIKE ?", "%#{search}%", "%#{search}%", "%#{search}%", "%#{search}%") 
-end
 
   private
 
   def item_params
-    params.require(:item).permit(:image, :title, :address, :condition)
-
+    params.require(:item).permit(:title, :address, :condition)
   end
 end

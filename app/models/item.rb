@@ -21,6 +21,9 @@ class Item < ActiveRecord::Base
   validates :address, :presence => true
   validates :image, :presence => true
 
+  def self.search(search)
+    where('title ILIKE ? OR address ILIKE ?', "%#{search}%", "%#{search}%")
+  end
 
   private
   def geocoder_that_works
