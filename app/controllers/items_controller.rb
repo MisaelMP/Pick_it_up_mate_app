@@ -32,7 +32,12 @@ class ItemsController < ApplicationController
   end
 
   def create
-    item = Item.create item_params
+    item = Item.new item_params
+    if params['item']['image']
+      cloudinary = Cloudinary::Uploader.upload(params['item']['image'])
+      item.image = cloudinary['url']
+    end
+    item.save
     redirect_to item
   end
 
