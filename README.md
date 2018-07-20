@@ -14,7 +14,7 @@ Project developed during GA immersive course.
 
 #### Screenshots
 
-![Landing page](assets/images/landingpage.png?raw=true)
+![Landing page](assets/images/landingpage.png)
 
 #### Built with
 
