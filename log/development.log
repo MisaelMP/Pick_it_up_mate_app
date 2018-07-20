@@ -28632,3 +28632,911 @@ Processing by PagesController#faq as HTML
 Completed 200 OK in 200ms (Views: 196.2ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-07-19 20:04:27 +1000
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+:
+
+Started POST "/__better_errors/73bc3807ca663977/variables" for 127.0.0.1 at 2018-07-19 20:04:28 +1000
+Started GET "/" for 127.0.0.1 at 2018-07-19 20:05:24 +1000
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+:
+
+Started POST "/__better_errors/f3dfb4a4d3301f6e/variables" for 127.0.0.1 at 2018-07-19 20:05:24 +1000
+Started GET "/" for 127.0.0.1 at 2018-07-19 20:06:02 +1000
+  [1m[35m (38.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/misabel/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 6585ms (Views: 6573.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 20:13:59 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 209ms (Views: 200.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-07-19 20:14:05 +1000
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 417ms (Views: 137.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 20:14:07 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 671ms (Views: 87.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 21:42:54 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 478ms (Views: 462.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 21:43:40 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 299ms (Views: 297.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 21:44:19 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 137ms (Views: 134.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 21:44:40 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 95ms (Views: 93.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 21:46:07 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 454ms (Views: 452.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 21:46:13 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 84ms (Views: 82.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 21:46:17 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 94ms (Views: 92.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 21:47:20 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 247ms (Views: 245.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 21:47:43 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 91ms (Views: 89.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 21:49:37 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 194ms (Views: 192.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 21:49:58 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 92ms (Views: 90.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 21:50:17 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 93ms (Views: 90.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 21:52:46 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 224ms (Views: 203.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 21:53:24 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 461ms (Views: 459.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 21:53:35 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 86ms (Views: 83.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 21:53:58 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 88ms (Views: 86.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 21:58:06 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 201ms (Views: 199.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:04:43 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 173ms (Views: 171.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:05:47 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 224ms (Views: 221.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:06:17 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 94ms (Views: 91.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:09:02 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 179ms (Views: 176.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:10:16 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 112ms (Views: 109.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:10:23 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 91ms (Views: 88.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:11:52 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 268ms (Views: 265.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:13:39 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 107ms (Views: 105.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:13:44 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 88ms (Views: 86.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:14:53 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 91ms (Views: 88.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:15:55 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 90ms (Views: 88.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:18:52 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 91ms (Views: 89.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:22:01 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 80ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:24:11 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 98ms (Views: 96.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:24:50 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 85ms (Views: 83.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:25:00 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 90ms (Views: 87.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:25:13 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 93ms (Views: 91.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:25:26 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 96ms (Views: 83.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:27:59 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 92ms (Views: 89.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:28:05 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 96ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:28:09 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 91ms (Views: 88.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:29:54 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 84ms (Views: 82.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:34:10 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 163ms (Views: 160.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:34:24 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 92ms (Views: 89.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:34:50 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 83ms (Views: 81.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:35:05 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 94ms (Views: 91.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:37:59 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 353ms (Views: 342.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:45:36 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 93ms (Views: 90.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:47:03 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 92ms (Views: 90.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:48:14 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 116ms (Views: 113.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:49:03 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 150ms (Views: 146.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:49:31 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 85ms (Views: 83.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:50:48 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 110ms (Views: 108.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:50:57 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 94ms (Views: 92.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:51:37 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 82ms (Views: 79.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:51:43 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 99ms (Views: 96.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:52:40 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 113ms (Views: 110.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:53:35 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 86ms (Views: 84.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:53:57 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 89ms (Views: 87.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:54:07 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 84ms (Views: 81.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:54:18 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 92ms (Views: 90.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:56:21 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 166ms (Views: 164.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:56:30 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 84ms (Views: 82.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 22:59:43 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 178ms (Views: 175.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:01:15 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 234ms (Views: 232.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:02:56 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 86ms (Views: 83.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:03:49 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 92ms (Views: 90.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:04:27 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 91ms (Views: 88.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:04:50 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 146ms (Views: 143.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:06:02 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 90ms (Views: 88.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:06:18 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 82ms (Views: 79.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:06:55 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 96ms (Views: 93.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:07:07 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 82ms (Views: 80.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:07:49 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 158ms (Views: 155.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:08:52 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 302ms (Views: 300.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:09:00 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 203ms (Views: 201.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:10:39 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 536ms (Views: 533.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:10:49 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 86ms (Views: 83.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:11:07 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 169ms (Views: 167.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:14:35 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 291ms (Views: 288.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:15:40 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 99ms (Views: 97.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:16:21 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 187ms (Views: 184.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:17:35 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 325ms (Views: 323.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:18:18 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 302ms (Views: 300.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:20:53 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 291ms (Views: 249.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:21:52 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 81ms (Views: 79.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:22:14 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 90ms (Views: 87.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:22:59 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 257ms (Views: 255.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:23:04 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 81ms (Views: 78.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:23:08 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 93ms (Views: 90.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:23:10 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 85ms (Views: 83.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:23:33 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 165ms (Views: 163.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:25:10 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 702ms (Views: 700.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:25:24 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 98ms (Views: 96.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:30:34 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 625ms (Views: 622.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:32:39 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 457ms (Views: 454.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:34:24 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 82ms (Views: 80.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:34:40 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 391ms (Views: 389.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:34:44 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 82ms (Views: 80.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:34:46 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 93ms (Views: 91.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:36:09 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 142ms (Views: 140.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:39:08 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 274ms (Views: 271.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:39:14 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 99ms (Views: 97.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:42:10 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 591ms (Views: 589.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:42:15 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 91ms (Views: 88.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:42:48 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 291ms (Views: 288.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:48:00 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 546ms (Views: 537.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:48:04 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 101ms (Views: 98.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 23:48:07 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 101ms (Views: 99.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-19 23:48:09 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 86ms (Views: 84.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/8/edit" for 127.0.0.1 at 2018-07-20 10:13:18 +1000
+  [1m[35m (5.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/misaelm/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (60.8ms)
+Completed 200 OK in 2772ms (Views: 2668.3ms | ActiveRecord: 20.3ms)
+
+
+Started DELETE "/login" for 127.0.0.1 at 2018-07-20 10:13:27 +1000
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"PoSs3NTbbcIIdgUsMga8Ce5xISobu3WZDenQ3HtMAfJ4ce5yP1y/fBYqa/B3b5XVUHsb/J86MgPorz/E+tX7Cg=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-20 10:13:27 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 201ms (Views: 188.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-07-20 10:13:30 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 191ms (Views: 187.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-07-20 10:13:33 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 163ms (Views: 160.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-07-20 10:13:36 +1000
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (12.9ms)
+  Rendered users/new.html.erb within layouts/application (43.9ms)
+Completed 200 OK in 210ms (Views: 158.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-20 10:13:37 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 125ms (Views: 121.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-07-20 10:13:39 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 165ms (Views: 161.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-20 10:13:41 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 105ms (Views: 101.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-20 10:13:43 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 145ms (Views: 141.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-07-20 10:13:44 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 219ms (Views: 216.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-20 10:13:49 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 179ms (Views: 176.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-20 10:14:37 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 120ms (Views: 117.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at 2018-07-20 10:15:44 +1000
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 159ms (Views: 156.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-07-20 10:16:04 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 122ms (Views: 116.6ms | ActiveRecord: 0.0ms)
+
+

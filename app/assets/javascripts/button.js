@@ -14,5 +14,6 @@ $(function() {
     const target = $(this).attr('href');
     $('.tab-pane').hide();
     $(target).show();
-  });
+  });  
+
 });
