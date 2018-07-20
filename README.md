@@ -14,7 +14,7 @@ Project developed during GA immersive course.
 
 #### Screenshots
 
-![Landing page](assets/images/landingpage.png)
+![Landing page](https://res.cloudinary.com/dvveletez/image/upload/v1532051507/landingpage.png)
 
 #### Built with
 
