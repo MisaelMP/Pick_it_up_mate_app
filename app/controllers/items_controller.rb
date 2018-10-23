@@ -5,8 +5,8 @@ class ItemsController < ApplicationController
                Item.search(params[:search]).order('created_at DESC')
              else
                Item.all.order('created_at DESC')
-            end
- end
+             end
+  end
 
   def show
     @item = Item.find params[:id]

@@ -29694,3 +29694,12 @@ Processing by UsersController#new as HTML
 Completed 200 OK in 362ms (Views: 328.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-09-21 09:45:57 +1000
+  [1m[35m (33.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/misabel/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 8091ms (Views: 8066.1ms | ActiveRecord: 0.0ms)
+
+

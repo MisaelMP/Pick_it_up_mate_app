@@ -1,36 +1,37 @@
 <h1>All Items</h1>
 <div class="alert">
-<% if @items.blank? %>
-  <div>There are no Items for your search, try again! <%= params[:search] %>.</div>
-<% end %>
+  <% if @items.blank? %>
+    <div>There are no Items for your search, try again!
+      <%= params[:search] %>.</div>
+  <% end %>
 </div>
 <div class="d-flex justify-content-end searchbox">
-<div>
-<%= form_tag(items_path, :class =>'input-group', :method => "get", id: "search-form") do %>
+  <div>
+    <%= form_tag(items_path, :class =>'input-group', :method => "get", id: "search-form") do %>
     <%= text_field_tag :search, params[:search], placeholder: "Find it!" %>
     <span class="input-group-btn">
-    <%= submit_tag "Search", :name => nil, class: "btn btn-default" %>
-    <i class="fa fa-search" aria-hidden="true"></i>
+      <%= submit_tag "Search", :name => nil, class: "btn btn-default" %>
+      <i class="fa fa-search" aria-hidden="true"></i>
     </span>
-<% end %>
+  <% end %>
 </div>
 </div>
 <div class="container">
-  <div class="row">
-    <% @items.each do |item| %>
+<div class="row">
+  <% @items.each do |item| %>
 
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-        <%= link_to image_tag(item.image, :class => 'img-fluid img-thumbnail'), item %></div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+      <%= link_to image_tag(item.image, :class => 'img-fluid img-thumbnail'), item %></div>
 
-    <% end %>
-  </div>
+  <% end %>
+</div>
 </div>
 <div class="card">
-  <div class="card-block mx-auto" style='width: 400px'>
-    <div id="map_index" style='width: 400px; height: 400px;'></div>
-  </div>
+<div class="card-block mx-auto" style='width: 400px'>
+  <div id="map_index" style='width: 400px; height: 400px;'></div>
+</div>
 </div>
 
 <script>
-  const locations = <%== Item.all.to_json %>;
+const locations = <%== Item.all.to_json %>;
 </script>

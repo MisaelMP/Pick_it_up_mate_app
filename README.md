@@ -6,8 +6,8 @@
 
 #### About the project
 -----------------------
-Pick it up mate! Is a socially aware environmental application that aims to contribute and encourage the philosophy of reduce/recycle/reuse. The participation of society to resolve issues of waste is fundamental, specially in big cities as we encountered day by day and this projects delivers a solution for a common phenomena.
-Project developed during GA immersive course.
+Pick it up mate! Is a socially aware environmental application that aims to contribute to and encourage the philosophy of reduce/recycle/reuse. The participation of society to resolve issues of waste is fundamental, especially in big cities as we encountered day by day and this project delivers a solution for a common phenomenon.
+A project developed during GA immersive course.
 
 
 [Live Heroku Page here](https://rocky-gorge-25750.herokuapp.com)
