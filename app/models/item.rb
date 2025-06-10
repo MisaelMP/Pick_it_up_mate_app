@@ -27,8 +27,12 @@ class Item < ActiveRecord::Base
 
   private
   def geocoder_that_works
-    results = Geocoder.search self.address
-    self.latitude = results.first.coordinates.first
-    self.longitude = results.first.coordinates.last
+    return if self.latitude.present? && self.longitude.present?
+    
+    results = Geocoder.search(self.address)
+    if results.present? && results.first
+      self.latitude = results.first.coordinates[0]
+      self.longitude = results.first.coordinates[1]
+    end
   end
 end
