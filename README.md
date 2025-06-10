@@ -18,9 +18,8 @@ A project developed during GA immersive course.
 
 #### Built with
 
-* Ruby on Rails version 2.5.1
-
-* Ruby Sass
+* Ruby 3.2.3 with Rails 7.1
+* SassC (via sassc-rails)
 
 * JSON
 
